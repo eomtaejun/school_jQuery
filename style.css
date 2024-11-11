@@ -1,0 +1,159 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 1px solid #000;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style-type: none;
+}
+/* //reset */
+
+/* conteiner */
+.innerWrap{
+    width: 100%;
+    max-width: 1320px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+/* //container */
+
+/* header */
+header{
+    width: 1200px;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    width: 200px;
+    height: 100px;
+}
+header .logo>img{
+    width: 100%;
+    height: 100%;
+}
+
+header .menu{
+    width: 600px;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .menu li{
+    width: calc(100% / 4);
+    height: fit-content;
+    text-align: center;
+}
+/* //header */
+
+/* contents */
+.slide{
+    width: 1200px;
+    height: 300px;
+}
+.slide>img{
+    width: 100%;
+    height: 100%;
+}
+
+.contents{
+    width: 1200px;
+    height: 200px;
+
+    display: flex;
+}
+.contents .content{
+    width: 400px;
+    height: 200px;
+}
+
+.contents .notice{
+    
+}
+.contents .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contents .gallery li{
+    width: 130px;
+    height: 60px;
+}
+.contents .gallery li>img{
+    width: 100%;
+    height: 100%;
+}
+
+.contents .banner>img{
+    width: 100%;
+    height: 100%;
+}
+
+.contents .shortcut>img{
+    width: 100%;
+    height: 100%;
+}
+/* //contents */
+
+/* footer */
+footer{
+    width: 1200px;
+    height: 100px;
+
+    display: flex;
+}
+
+footer .logo{
+    width: 200px;
+    height: 100px;
+}
+footer .logo>img{
+    width: 100%;
+    height: 100%;
+}
+
+footer .copyright{
+    width: 1000px;
+    height: 100px;
+
+    text-align: center;
+    padding: 10px;
+}
+/* //footer */
+
+/* modal */
+#modal{
+    display: none;
+
+    width: 300px;
+    height: 300px;
+    background-color: #eee;
+
+    position: fixed;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: 99999;
+}
+/* //modal */
